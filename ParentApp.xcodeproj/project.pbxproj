@@ -14,6 +14,9 @@
 		632EE1231E5088CB00710EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632EE1211E5088CB00710EDF /* LaunchScreen.storyboard */; };
 		632EE12E1E5088CB00710EDF /* ParentAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE12D1E5088CB00710EDF /* ParentAppTests.swift */; };
 		632EE1391E5088CB00710EDF /* ParentAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE1381E5088CB00710EDF /* ParentAppUITests.swift */; };
+		632EE1791E50D96D00710EDF /* AppOneApp.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 632EE1781E50D96D00710EDF /* AppOneApp.framework.dSYM */; };
+		632EE17F1E50DB2900710EDF /* AppOneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EE17E1E50DB2900710EDF /* AppOneApp.framework */; };
+		632EE1801E50DB2900710EDF /* AppOneApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 632EE17E1E50DB2900710EDF /* AppOneApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		632EE16D1E50B8FB00710EDF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				632EE1791E50D96D00710EDF /* AppOneApp.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		632EE1811E50DB2900710EDF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				632EE1801E50DB2900710EDF /* AppOneApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		632EE1151E5088CB00710EDF /* ParentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632EE1181E5088CB00710EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +74,8 @@
 		632EE1341E5088CB00710EDF /* ParentAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParentAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		632EE1381E5088CB00710EDF /* ParentAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentAppUITests.swift; sourceTree = "<group>"; };
 		632EE13A1E5088CB00710EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632EE1781E50D96D00710EDF /* AppOneApp.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneApp.framework.dSYM; path = Carthage/Build/iOS/AppOneApp.framework.dSYM; sourceTree = "<group>"; };
+		632EE17E1E50DB2900710EDF /* AppOneApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppOneApp.framework; path = Carthage/Build/iOS/AppOneApp.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632EE17F1E50DB2900710EDF /* AppOneApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +107,9 @@
 		632EE10C1E5088CB00710EDF = {
 			isa = PBXGroup;
 			children = (
+				632EE17E1E50DB2900710EDF /* AppOneApp.framework */,
+				632EE1781E50D96D00710EDF /* AppOneApp.framework.dSYM */,
+				632EE16C1E50B7D500710EDF /* Frameworks */,
 				632EE1171E5088CB00710EDF /* ParentApp */,
 				632EE12C1E5088CB00710EDF /* ParentAppTests */,
 				632EE1371E5088CB00710EDF /* ParentAppUITests */,
@@ -125,6 +158,13 @@
 			path = ParentAppUITests;
 			sourceTree = "<group>";
 		};
+		632EE16C1E50B7D500710EDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +175,9 @@
 				632EE1111E5088CB00710EDF /* Sources */,
 				632EE1121E5088CB00710EDF /* Frameworks */,
 				632EE1131E5088CB00710EDF /* Resources */,
+				632EE16D1E50B8FB00710EDF /* CopyFiles */,
+				632EE16E1E50B90C00710EDF /* ShellScript */,
+				632EE1811E50DB2900710EDF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +299,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		632EE16E1E50B90C00710EDF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		632EE1111E5088CB00710EDF /* Sources */ = {
@@ -415,7 +475,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = 28E33VD9J6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ParentApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.ParentApp;
@@ -428,7 +493,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = 28E33VD9J6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ParentApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.ParentApp;
@@ -514,6 +584,7 @@
 				632EE13F1E5088CB00710EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		632EE1401E5088CB00710EDF /* Build configuration list for PBXNativeTarget "ParentAppTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +593,7 @@
 				632EE1421E5088CB00710EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		632EE1431E5088CB00710EDF /* Build configuration list for PBXNativeTarget "ParentAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +602,7 @@
 				632EE1451E5088CB00710EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
