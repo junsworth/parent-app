@@ -15,7 +15,7 @@
 		632EE12E1E5088CB00710EDF /* ParentAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE12D1E5088CB00710EDF /* ParentAppTests.swift */; };
 		632EE1391E5088CB00710EDF /* ParentAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE1381E5088CB00710EDF /* ParentAppUITests.swift */; };
 		639FA1AA1E524A4600BA1DC9 /* AppOneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639FA1A91E524A4600BA1DC9 /* AppOneApp.framework */; };
-		639FA1B81E5254C300BA1DC9 /* AppOneApp.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 639FA1B71E5254C300BA1DC9 /* AppOneApp.framework.dSYM */; };
+		639FA1C01E53210100BA1DC9 /* AppOneApp.framework.dSYM in Copy Files dSYM Debug Symbols */ = {isa = PBXBuildFile; fileRef = 639FA1BF1E53210100BA1DC9 /* AppOneApp.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		632EE16D1E50B8FB00710EDF /* CopyFiles */ = {
+		632EE16D1E50B8FB00710EDF /* Copy Files dSYM Debug Symbols */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				639FA1B81E5254C300BA1DC9 /* AppOneApp.framework.dSYM in CopyFiles */,
+				639FA1C01E53210100BA1DC9 /* AppOneApp.framework.dSYM in Copy Files dSYM Debug Symbols */,
 			);
+			name = "Copy Files dSYM Debug Symbols";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -63,7 +64,7 @@
 		632EE1381E5088CB00710EDF /* ParentAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentAppUITests.swift; sourceTree = "<group>"; };
 		632EE13A1E5088CB00710EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		639FA1A91E524A4600BA1DC9 /* AppOneApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppOneApp.framework; path = Carthage/Build/iOS/AppOneApp.framework; sourceTree = "<group>"; };
-		639FA1B71E5254C300BA1DC9 /* AppOneApp.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneApp.framework.dSYM; path = Carthage/Build/iOS/AppOneApp.framework.dSYM; sourceTree = "<group>"; };
+		639FA1BF1E53210100BA1DC9 /* AppOneApp.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneApp.framework.dSYM; path = Carthage/Build/iOS/AppOneApp.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +96,7 @@
 		632EE10C1E5088CB00710EDF = {
 			isa = PBXGroup;
 			children = (
-				639FA1B71E5254C300BA1DC9 /* AppOneApp.framework.dSYM */,
+				639FA1BF1E53210100BA1DC9 /* AppOneApp.framework.dSYM */,
 				632EE16C1E50B7D500710EDF /* Frameworks */,
 				632EE1171E5088CB00710EDF /* ParentApp */,
 				632EE12C1E5088CB00710EDF /* ParentAppTests */,
@@ -163,7 +164,7 @@
 				632EE1111E5088CB00710EDF /* Sources */,
 				632EE1121E5088CB00710EDF /* Frameworks */,
 				632EE1131E5088CB00710EDF /* Resources */,
-				632EE16D1E50B8FB00710EDF /* CopyFiles */,
+				632EE16D1E50B8FB00710EDF /* Copy Files dSYM Debug Symbols */,
 				632EE16E1E50B90C00710EDF /* ShellScript */,
 			);
 			buildRules = (

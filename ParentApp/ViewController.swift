@@ -10,12 +10,17 @@ import UIKit
 
 import Alamofire
 import AppOneApp
+import CoreLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+        let namedUser = User.init(firstName: "Jonathan", lastName: "Unsworth", photo: nil)
+        
+        print("\(namedUser?.getFirstName())")
         
         Alamofire.request("https://httpbin.org/get").responseJSON { response in
             print(response.request!)  // original URL request
