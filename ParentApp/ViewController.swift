@@ -18,9 +18,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        let namedUser = User.init(firstName: "Jonathan", lastName: "Unsworth", photo: nil)
+        let namedUser = User.init(id:2, firstName: "Jonathan", lastName: "Unsworth")
         
-        print("\(namedUser?.getFirstName())")
+        let mockUser = User.mock(mock: "user")
+        
+        //print("\(namedUser!.getFirstName())")
         
         Alamofire.request("https://httpbin.org/get").responseJSON { response in
             print(response.request!)  // original URL request
@@ -41,7 +43,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
