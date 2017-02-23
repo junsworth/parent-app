@@ -10,6 +10,7 @@ import UIKit
 
 import Alamofire
 import AppOneApp
+import AppOneLib
 import CoreLib
 
 class ViewController: UIViewController {
@@ -20,10 +21,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let namedUser = User.init(id:2, firstName: "Jonathan", lastName: "Unsworth")
         
-        let mockUser = User.mock(mock: "user")
+        print("BUNDLE \(NSLocalizedString(Keyword.bundleIdentifier, comment: ""))")
         
-        //print("\(namedUser!.getFirstName())")
-        
+        print("\(namedUser!.getId()) \(namedUser!.getFirstName()) \(namedUser!.getLastName())")
         Alamofire.request("https://httpbin.org/get").responseJSON { response in
             print(response.request!)  // original URL request
             print(response.response!) // HTTP URL response
