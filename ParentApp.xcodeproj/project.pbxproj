@@ -16,6 +16,7 @@
 		632EE1391E5088CB00710EDF /* ParentAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE1381E5088CB00710EDF /* ParentAppUITests.swift */; };
 		639FA1AA1E524A4600BA1DC9 /* AppOneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639FA1A91E524A4600BA1DC9 /* AppOneApp.framework */; };
 		639FA1C01E53210100BA1DC9 /* AppOneApp.framework.dSYM in Copy Files dSYM Debug Symbols */ = {isa = PBXBuildFile; fileRef = 639FA1BF1E53210100BA1DC9 /* AppOneApp.framework.dSYM */; };
+		63D5DCFB1E5EB79200EFA823 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63D5DCFA1E5EB79200EFA823 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		632EE13A1E5088CB00710EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		639FA1A91E524A4600BA1DC9 /* AppOneApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppOneApp.framework; path = Carthage/Build/iOS/AppOneApp.framework; sourceTree = "<group>"; };
 		639FA1BF1E53210100BA1DC9 /* AppOneApp.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneApp.framework.dSYM; path = Carthage/Build/iOS/AppOneApp.framework.dSYM; sourceTree = "<group>"; };
+		63D5DCFA1E5EB79200EFA823 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		632EE1171E5088CB00710EDF /* ParentApp */ = {
 			isa = PBXGroup;
 			children = (
+				63D5DCF81E5EB77F00EFA823 /* src */,
 				632EE1181E5088CB00710EDF /* AppDelegate.swift */,
 				632EE11A1E5088CB00710EDF /* ViewController.swift */,
 				632EE11C1E5088CB00710EDF /* Main.storyboard */,
@@ -152,6 +155,22 @@
 				639FA1A91E524A4600BA1DC9 /* AppOneApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63D5DCF81E5EB77F00EFA823 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				63D5DCF91E5EB77F00EFA823 /* Config */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		63D5DCF91E5EB77F00EFA823 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				63D5DCFA1E5EB79200EFA823 /* Localizable.strings */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632EE1231E5088CB00710EDF /* LaunchScreen.storyboard in Resources */,
+				63D5DCFB1E5EB79200EFA823 /* Localizable.strings in Resources */,
 				632EE1201E5088CB00710EDF /* Assets.xcassets in Resources */,
 				632EE11E1E5088CB00710EDF /* Main.storyboard in Resources */,
 			);
@@ -296,6 +316,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AppOneApp.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AppOneLib.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CoreLib.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputPaths = (
@@ -472,6 +494,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ParentApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.ParentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,6 +514,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ParentApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.ParentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
